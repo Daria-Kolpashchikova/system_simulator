@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>786</width>
+    <height>697</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(241, 226, 204);
+color: rgb(36, 22, 67);</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>701</width>
+     <height>671</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QTabWidget::pane { 
+   border: none;
+}
+QTabBar::tab {
+font-family: Courier;
+           background-color: rgb(101, 81, 159);
+		   color:white;
+            padding: 6px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+         	border-color: rgb(255, 255, 255);
+        }
+QTabBar::bar {
+                  	
+	background-color: rgb(0, 0, 0);
+        }
+QTabBar::tab:selected { 
+ 		   
+	       
+	
+	background-color: rgb(54, 35, 75);
+		   color:white;
+            padding: 6px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+         	border-color: rgb(255, 255, 255);
+}
+background-color: rgb(241, 226, 204);      
+
+font-family: Courier;</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_3">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <attribute name="title">
+     <string>Симулятор</string>
+    </attribute>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>721</width>
+       <height>671</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(241, 226, 204);
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>701</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 20px;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>661</width>
+         <height>301</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout"/>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>350</y>
+        <width>701</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-top-right-radius: 20px;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ border-top-left-radius: 20px;
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButton_calc">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>220</y>
+         <width>241</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton {
+     border-style: outset;
+     border-width: 0px;
+     border-radius: 10px;
+     border-color: beige;
+     min-width: 10em;
+     padding:3px;
+background-color: rgb(101, 81, 159);
+color: rgb(255, 255, 255);
+font-family: Courier;
+
+}
+QPushButton:pressed {
+    border-style: outset;
+     border-width: 0px;
+     border-radius: 10px;
+     border-color: beige;
+     min-width: 10em;
+     padding: 6px;
+	
+	background-color: rgb(207, 179, 255);
+color: rgb(255, 255, 255);
+font-family: Courier;
+
+}</string>
+       </property>
+       <property name="text">
+        <string>Рассчитать промежуток k1, k2</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_calc">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>223</y>
+         <width>171</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>150</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;</string>
+       </property>
+       <property name="text">
+        <string>Коэффициент k1</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>180</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;</string>
+       </property>
+       <property name="text">
+        <string>Коэффициент k2</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_k2">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>175</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(223, 223, 223);
+     border-style: outset;
+     border-width: 0px;
+     border-radius: 10px;
+     border-color: beige;
+     padding: 2px;
+color: rgb(47, 47, 47);
+font-size:11px;
+font-family: Courier;
+</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_k1">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>145</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(223, 223, 223);
+     border-style: outset;
+     border-width: 0px;
+     border-radius: 10px;
+     border-color: beige;
+     padding: 2px;
+color: rgb(47, 47, 47);
+font-size:11px;
+font-family: Courier;
+</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_warning_k1">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>150</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;
+color: rgb(255, 80, 112);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_warning_k2">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>180</y>
+         <width>141</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;
+color: rgb(255, 80, 112);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_test">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>550</y>
+        <width>231</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_h">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>410</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>410</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;</string>
+     </property>
+     <property name="text">
+      <string>Запаздывание, мс</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>440</y>
+       <width>221</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;</string>
+     </property>
+     <property name="text">
+      <string>Скорость первого дрона, м/c</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_F">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>500</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(223, 223, 223);
+     border-style: outset;
+     border-width: 0px;
+     border-radius: 10px;
+     border-color: beige;
+     padding: 2px;
+color: rgb(47, 47, 47);
+font-size:11px;
+font-family: Courier;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_m">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>380</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_V">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>440</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider::groove:horizontal {
+border: 1px solid #bbb;
+background: white;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #66e, stop: 1 #bbf);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #bbf, stop: 1 #55f);
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+background: #fff;
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #eee, stop:1 #ccc);
+border: 1px solid #777;
+width: 13px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #fff, stop:1 #ddd);
+border: 1px solid #444;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+     </property>
+     <property name="minimum">
+      <number>10</number>
+     </property>
+     <property name="maximum">
+      <number>300</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_h">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>410</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider::groove:horizontal {
+border: 1px solid #bbb;
+background: white;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #66e, stop: 1 #bbf);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #bbf, stop: 1 #55f);
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+background: #fff;
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #eee, stop:1 #ccc);
+border: 1px solid #777;
+width: 13px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #fff, stop:1 #ddd);
+border: 1px solid #444;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+     </property>
+     <property name="minimum">
+      <number>100</number>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
+     </property>
+     <property name="pageStep">
+      <number>1</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_F_2">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>525</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(223, 223, 223);
+     border-style: outset;
+     border-width: 0px;
+     border-radius: 10px;
+     border-color: beige;
+     padding: 2px;
+color: rgb(47, 47, 47);
+font-size:11px;
+font-family: Courier;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>380</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;</string>
+     </property>
+     <property name="text">
+      <string>Масса, кг</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>530</y>
+       <width>201</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;</string>
+     </property>
+     <property name="text">
+      <string>Для второго дрона, м/с</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_m">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>380</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider::groove:horizontal {
+border: 1px solid #bbb;
+background: white;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #66e, stop: 1 #bbf);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #bbf, stop: 1 #55f);
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+background: #fff;
+border: 1px solid #777;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #eee, stop:1 #ccc);
+border: 1px solid #777;
+width: 13px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal:hover {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+    stop:0 #fff, stop:1 #ddd);
+border: 1px solid #444;
+border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #bbb;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}</string>
+     </property>
+     <property name="minimum">
+      <number>40</number>
+     </property>
+     <property name="maximum">
+      <number>300</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>500</y>
+       <width>221</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;</string>
+     </property>
+     <property name="text">
+      <string>Для головного дрона, м/с</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>470</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 75 12pt &quot;Courier&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Возмущения:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_s">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>440</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+font-family: Courier;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>Графики</string>
+    </attribute>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>701</width>
+       <height>611</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-top-right-radius: 20px;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QWidget" name="gridLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>661</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_analysis"/>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="push_start">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>30</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+     border-style: outset;
+     border-width: 0px;
+     border-radius: 10px;
+     border-color: beige;
+     padding:3px;
+background-color: rgb(101, 81, 159);
+color: rgb(255, 255, 255);
+font-family: Courier;
+
+}
+QPushButton:pressed {
+    border-style: outset;
+     border-width: 0px;
+     border-radius: 10px;
+     border-color: beige;
+     min-width: 10em;
+     padding: 6px;
+	
+	background-color: rgb(207, 179, 255);
+color: rgb(255, 255, 255);
+font-family: Courier;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Старт</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_stop">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>30</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+     border-style: outset;
+     border-width: 0px;
+     border-radius: 10px;
+     border-color: beige;
+     padding: 6px;
+background-color: rgb(101, 81, 159);
+color: rgb(255, 255, 255);
+font-family: Courier;
+
+}
+QPushButton:pressed {
+    border-style: outset;
+     border-width: 0px;
+     border-radius: 10px;
+     border-color: beige;
+     min-width: 10em;
+     padding: 6px;
+	
+	background-color: rgb(207, 179, 255);
+color: rgb(255, 255, 255);
+font-family: Courier;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Стоп</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
